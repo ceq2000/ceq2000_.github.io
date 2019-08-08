@@ -1,0 +1,61 @@
+p {
+
+}
+.classitem {
+
+}
+#iditem {
+    
+}
+
+header {
+    background: #cccccc;
+    padding:20px;
+    margin-bottom: 20px;
+    color: #333333;             
+}
+
+section {
+    padding: 20px;
+}
+
+#left {
+    background-color: #666666;
+    color: white;
+    width: 50%;
+    float: left;
+}
+#middle {
+    background-color: #666666;
+    color: white;
+    width: 50%;
+    float: left;
+}
+#right {
+    background-color: #666666;
+    color: white;
+    width: 50%;
+    float: left;
+}
+#full {
+    clear: both;
+    background-color: #eeeeee;
+    width: 100%;
+    overflow: auto;
+}
+#division {
+    background-color: #66eeaa;
+    padding: 20%;
+}
+aside {
+    background-color: #ffffff;
+    width: 33.%;
+    height: 200px;
+    border: 1px solid #eeeeee;
+    float: left;
+}
+footer {
+    clear: both;
+    background-color: #cccccc;
+    padding: 20px;
+}
