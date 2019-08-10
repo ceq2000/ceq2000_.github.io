@@ -39,9 +39,12 @@ p.top {
   margin-top: 0px;
 }
 img {
-  float: left;
+  /* float: left; */
   margin-right: 25px;
   margin-bottom: 6px;
+}
+.bioimage {
+  float: left;
 }
 .form {
   margin: 0px; 
@@ -191,7 +194,12 @@ div.card {
   float: right;
   width: 50%;
 }
+.topnav {
 
+}
+.col-md-12 {
+  margin-left: 0px; 
+}
 /**
  * Footer Layout Activity
  **/
