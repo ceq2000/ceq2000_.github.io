@@ -4,60 +4,56 @@
 
 * {
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
   margin: 0;
   padding: 0;
+  flex-flow: nowrap;
 }
-
-body {
-
-}
-
 h1 {
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25cm;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     height: 20px;
-    margin-bottom: 0px;
+    border-bottom: solid teal 25px;
 }
-
 h2 {
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: teal;
     text-align: left;
     height: 20px;
-    margin-bottom: 25px;
-    padding-left: 0%;
+    margin-bottom: 46px;
+    margin-top: 10px;
 }
-
 p {
     text-align: left;
     margin-top: 25px;
-    padding-left: 33.333%;
-    clear: both;
-    float: left;
-    align-content: initial;
+    padding-left: 10px;
     margin-bottom: 25px;
 }
-
-
-
-#bio-image {
-    clear: both;
-    float: left;
-    padding-right: 33.333%;
-    margin-left: 0%;
-    margin-right: 100%;
+p.top {
+  float: right;
+  padding-left: 10px;
+  text-align: left;
+  margin-top: 0px;
 }
+img {
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 6px;
+}
+.form {
+  margin: 0px; 
+  height: 40px;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+.portfolio-top {
+  margin-bottom: 50px;
+}
+.portfolio-bottom {
 
-#form {
-    margin: 0px;
-    size: large;
-    height: 100px;
-    margin-top: 25px;
-    float: left;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
@@ -68,9 +64,8 @@ input[type=text], select, textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
   background-color: teal;
@@ -79,30 +74,41 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  size: 
 }
-
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
 }
-
 /* Add a background color and some padding around the form */
 .container {
   margin: 0px;  
   border-radius: 25px;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 5px;
   border: 5px;
   border-color: #333;
-  clear: both;
-  float: left;
   width: 960px;
-  z-index: 200px;
   margin-left: 33.333%;
   height: 700px;
   margin-top: 20px;
   margin-right: 10%;
+  padding-left: 25px;
+}
+.container2 {
+  margin: 0px; 
+  float: left; 
+  border-radius: 25px;
+  background-color: #ffffff;
+  padding: 5px;
+  border: 5px;
+  border-color: #333;
+  width: 960px;
+  margin-left: 33.333%;
+  height: 700px;
+  margin-top: 20px;
+  margin-right: 10%;
+  padding-left: 25px;
+  padding: 25px;
 }
 /**
  * Header Layout Activity
@@ -114,163 +120,91 @@ header {
   color: #333;
   background: lightblue;
   width: 100%;
-  text-align: right
+  text-align: right;
   padding: 50px; 
   height: 3rem; 
+  background: #cccccc;
 }
 #leftheader {
   background-color: #ffffff;
   float: left;
   width: 33.333%;
-  height: 3rem;
+  height: 4rem;
   padding: 20px;   
 }
 #middleheader {
   background-color: teal;
   float: left;
-  width: 365px;
-  height: 3rem;
+  width: 386px;
+  height: 4rem;
   padding: 10px;
-  
 }
 #rightheader {
   background-color:#ffffff;
   float: right;
-  width: 250px;
-  height: 3rem;
-  margin-top: 10px;
-  padding: 15px;
+  width: 360px;
+  height: 4rem;
+  padding: 28px;
 }
-/**
- * Section Layout Activity
- **/
-section {
-  background-color: #eeeeee;
-  float: left;
-}
-
 #full {
+  background-image: url("../images/fishnets-and-hearts.png");
+  margin: 0px;
   clear: both;
-  float: left;
   background-color: #eeeeee;
   width: 100%;
-  height: 760px
+  height: 760px;
+  overflow: auto;
+}
+.card-body {
+  /* float: left; */
+  width: 15rem;
+  padding: 0;
+}
+.card-text {
+  margin: 0%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
 
 }
-
-#leftsection {
-  background-color: #ffffff;
+div.card {
+  margin: 0px;
+  background-color: teal;
+  width: 300px;
+  height: 200px;
+  border: 1px dotted black;
+  overflow: visible;
+  color: #ffffff;
+}
+.card-img-top {
+  width: 100%;
+  overflow: visible;
+}
+.w3-card-4,.w3-hover-shadow:hover {box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+}
+.leftcolumn {
+  clear: both;
   float: left;
-  width: 33.333%;
-  height: 3rem;
-  padding: 20px;
+  width: 50%; 
 }
-
-#middlesection {
-  background-color: #ffffff;
-  float: left;
-  width: 64.666%;
-  height: 3rem;
-  padding: 10px;
-}
-
-#rightsection {
-  background-color: #ffffff;
+.rightcolumn {
+  clear: both;
   float: right;
-  width: 2%;
-  height: 3rem;
+  width: 50%;
 }
 
-#division {
-  background-color: #6ea3da;
-  width: 90%;
-  margin: 15px;
-  height: 5rem;
-}
-
-.main {
-  float: left;
-  background-color: #ffffff;
-  height: 25rem;
-  margin-left: 30px;
-  width: 75%;
-  text-align-last: auto;           
-  
-}
-
-aside {
-  float: left;
-  background-color: #ffffff;
-  height: 12rem;
-  margin-left: 30px;
-  width: 375px;
-}
-
-section {
-  float: bottom;
-  padding: 1rem;
-}
-
-.w3-container {
-    margin-left: 20px;
-    height: 150px;
-}
 /**
  * Footer Layout Activity
  **/
-footer {
-  float: left;
+ footer {
+  clear: both;
+  margin: 0px;
   background-color: #666666;
   width: 100%;
   height: 100%;
   padding: 10px;
   border: 0px solid #666666;
-  margin-top: 20px;
-  border-top: 12px solid teal;
+  margin-top: 0px;
+  border-top: 10px solid teal;
   color: #ffffff;
+  text-align: center;
 }
-/* *, *::after, *::before {
-box-sizing: border-box;
-}
-
-.container {
-margin: 0 auto;
-margin-top: 50px;
-width: 1000px;
-color: white;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 1.25em;
-}
-
-header {
-background-color: #1D88E5;
-height: 100px;
-padding: 10px;
-border: 1px solid white;
-}
-
-aside {
-background-color: #1D88E5;
-width: 300px;
-height: 400px;
-padding: 10px;
-border: 1px solid white;
-float: left;
-}
-
-main {
-background-color: #1D88E5;
-width: 700px;
-height: 400px;
-padding: 10px;
-border: 1px solid white;
-float: left;
-}
-
-footer {
-background-color: #1D88E5;
-width: 1000px;
-height: 100px;
-padding: 10px;
-border: 1px solid white;
-} */
