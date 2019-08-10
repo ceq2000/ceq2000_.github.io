@@ -1,0 +1,216 @@
+/**
+* Float Layout Activity
+**/
+
+* {
+box-sizing: border-box;
+text-align: left;
+margin: 0;
+padding: 0;
+flex-flow: nowrap;
+}
+h1 {
+margin: 0px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.25cm;
+color: #ffffff;
+text-align: center;
+height: 20px;
+border-bottom: solid #4aaaa5 25px;
+}
+h2 {
+font-family: Georgia, 'Times New Roman', Times, serif;
+color: #4aaaa5;
+text-align: left;
+height: 20px;
+margin-bottom: 46px;
+margin-top: 10px;
+}
+p {
+text-align: left;
+margin-top: 25px;
+padding-left: 10px;
+margin-bottom: 25px;
+color: #777777;
+}
+p.top {
+float: right;
+padding-left: 10px;
+text-align: left;
+margin-top: 0px;
+color: #777777;
+}
+img {
+/* float: left; */
+margin-right: 25px;
+margin-bottom: 6px;
+}
+.bioimage {
+float: left;
+}
+.form {
+margin: 0px;
+height: 40px;
+margin-top: 25px;
+margin-bottom: 60px;
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+width: 33.333%; /* Full width */
+padding: 12px; /* Some padding */
+border: 1px solid #ccc; /* Gray border */
+border-radius: 4px; /* Rounded borders */
+box-sizing: border-box; /* Make sure that padding and width stays in place */
+margin-top: 6px; /* Add a top margin */
+margin-bottom: 16px; /* Bottom margin */
+resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+background-color: #4aaaa5;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+background-color: #45a049;
+}
+/* Add a background color and some padding around the form */
+.container {
+margin: 0px;
+border-radius: 25px;
+background-color: #ffffff;
+padding: 5px;
+border: 5px;
+border-color: #333;
+width: 960px;
+margin-left: 33.333%;
+height: 700px;
+margin-top: 20px;
+margin-right: 10%;
+padding-left: 25px;
+}
+.container2 {
+margin: 0px;
+float: left;
+border-radius: 25px;
+background-color: #ffffff;
+padding: 5px;
+border: 5px;
+border-color: #333;
+width: 960px;
+margin-left: 33.333%;
+height: 700px;
+margin-top: 20px;
+margin-right: 10%;
+padding-left: 25px;
+padding: 25px;
+}
+/**
+* Header Layout Activity
+**/
+header {
+padding: 20px;
+margin-right: 20px;
+margin-bottom: 20px;
+color: #333;
+background: lightblue;
+width: 100%;
+text-align: right;
+padding: 50px;
+height: 3rem;
+background: #cccccc;
+border-color: #cccccc;
+border: 1px;
+}
+#leftheader {
+background-color: #ffffff;
+float: left;
+width: 33.333%;
+height: 4rem;
+padding: 20px;
+}
+#middleheader {
+background-color: #4aaaa5;
+float: left;
+width: 386px;
+height: 4rem;
+padding: 10px;
+}
+#rightheader {
+background-color:#ffffff;
+float: right;
+width: 360px;
+height: 4rem;
+padding: 28px;
+}
+#full {
+background-image: url("../images/fishnets-and-hearts.png");
+margin: 0px;
+clear: both;
+background-color: #eeeeee;
+width: 100%;
+height: 760px;
+overflow: auto;
+border-color: #dddddd;
+}
+.card-body {
+/* float: left; */
+width: 15rem;
+padding: 0;
+}
+.card-text {
+margin: 0%;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: normal;
+
+}
+div.card {
+margin: 0px;
+background-color: #4aaaa5;
+width: 300px;
+height: 200px;
+border: 1px dotted black;
+overflow: visible;
+color: #ffffff;
+}
+.card-img-top {
+width: 100%;
+overflow: visible;
+}
+.w3-card-4,.w3-hover-shadow:hover {box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+}
+.leftcolumn {
+clear: both;
+float: left;
+width: 50%;
+}
+.rightcolumn {
+clear: both;
+float: right;
+width: 50%;
+}
+.topnav {
+
+}
+.col-md-12 {
+margin-left: 0px;
+}
+/**
+* Footer Layout Activity
+**/
+footer {
+clear: both;
+margin: 0px;
+background-color: #666666;
+width: 100%;
+height: 100%;
+padding: 10px;
+border: 0px solid #666666;
+margin-top: 0px;
+border-top: 10px solid #4aaaa5;
+color: #ffffff;
+text-align: center;
+}
